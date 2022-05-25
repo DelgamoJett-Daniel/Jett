@@ -1,0 +1,158 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COMP MAIN PT Delgamo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Favorite activities">Favorite sports</a></li>
+        <li><a href="#talents and favorite game">Food I like and Food I dislike</a></li>
+      </ul>
+    </nav>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="home" id="home" style="font-size: 50px;"><p><b>Hello</p></b>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="about" id="about" style="font-size: 35px;"><p><b>About me</p></b>
+        <p> I am Delgamo Jett-Daniel S. and I am from section 9 - Calasanz. I am from Tabunok Talisy City-Cebu. I am 15 years old.and I like to play online games and also watch tv.<p>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="talents and favorite game" id="talents and favorite game" style="font-size: 35px;"><p><b>Favorite Sports</p></b>
+        <p>My favorite Sports is Basketball because I use to play basketball when i was grade 7 and until now,.</p>
+    </div>
+    </section>
+    <section style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <div class="talents and favorite game" id="talents and favorite game" style="font-size: 35px;"><p><b>Food I like and Food I dislike</p></b>
+        <p>Food I like Fish, Chicken, Pancit, Coffee, Milk Tea, and more Food I dislike Eggplant, and Tofu. </p>
+    </div>
+    </section>
+  </body>
+</html>
+
+<style>
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: black;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background: linear-gradient(to top, White 0%, Green 100%);
+}
+nav{
+  /* fixed keyword is fine too */
+  position: sticky;
+   top: 0;
+   z-index: 100;
+  background: linear-gradient(to bottom, Green 0%, Blue 100%);
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: Skyblue;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: Orange;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  
+}
+
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: Blue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: White;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+</style>
